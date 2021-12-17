@@ -1,0 +1,55 @@
+/*================
+extra small device
+=================*/
+@media (max-width : 575px){
+    #banner{
+        height: 970px !important;
+    }
+    #banner h1{
+        font-size: 220px !important;
+    }
+    #spin{
+        height: 1250px !important;
+    }
+    #spin .spin-item{
+        position: absolute;
+        top: 540px;
+        left: 0;
+    }
+    #plan {
+        height: 1980px !important;
+    }
+    #plan .main button {
+        left: 110px !important;
+    }
+    #faq{
+        height: 1630px !important;
+    }
+    #faq .dropdown{
+        margin-bottom: 200px !important;
+    }
+    #faq button{
+        font-size: 11px !important;  
+    }
+    #faq li{
+        font-size: 11px !important;
+    }
+    #faq .wrapper{
+        width: 55px !important;
+    }
+    #faq .wrapper .label{
+        font-size: 10px !important;
+    }
+    #subs{
+        height: 500px !important;
+    }
+    #subs img{
+        margin-bottom: 10px !important;
+    }
+    #subs header{
+        text-align: center !important;
+    }
+    footer{
+        height: 1500px !important;
+    }
+}

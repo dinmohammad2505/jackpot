@@ -1,0 +1,558 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Nunito:wght@200;400;600;700&display=swap');
+
+:root{
+    --hf : 'Anton', sans-serif ;
+    --sf : 'Nunito', sans-serif ;
+    --brand : #a60084 ;
+    --brand2 : #ff39dc;
+    --cl1 : #570dc8 ;
+    --cl2 : #9e4efc ;
+    --cl3 : #e07e1e;
+    --cl4 : #fcb100;
+ }
+ 
+ /*============
+ root css ends
+ ============*/
+
+.an-reg{
+    font-family: var(--hf);
+    font-weight: 400;
+}
+
+.nu-el{
+    font-family: var(--sf);
+    font-weight: 200;
+}
+
+.nu-reg{
+    font-family: var(--sf);
+    font-weight: 400;
+}
+
+.nu-sb{
+    font-family: var(--sf);
+    font-weight: 600;
+}
+
+.nu-bold{
+    font-family: var(--sf);
+    font-weight: 700;
+}
+
+/*===================
+ font family css ends
+ ===================*/
+
+.fs-16{
+    font-size: 16px;
+}
+
+.fs-20{
+    font-size: 20px;
+}
+
+.fs-24{
+    font-size: 24px;
+}
+
+.fs-32{
+    font-size: 32px;
+}
+
+.fs-48{
+    font-size: 48px;
+}
+
+.fs-50{
+    font-size: 50px;
+}
+
+.fs-331{
+    font-size: 331px;
+}
+
+ /*===================
+ font size css ends
+ ===================*/
+
+.mb-30{
+    margin-bottom: 30px;
+}
+
+.pt-70{
+    padding-top: 70px;
+}
+
+ /*===================
+spacing css ends
+ ===================*/
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+img{
+    vertical-align: middle;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+/*==============
+common css ends
+===============*/
+
+#navbar{
+    background: #220055;
+}
+
+#navbar .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show > .nav-link {
+	color: var(--brand2) !important;
+}
+
+#navbar .navbar-light .navbar-nav{
+    margin-top: 90px;
+}
+
+#navbar .navbar-light .navbar-nav .nav-link {
+	color: var(--cl2);
+    margin-left: 55px;
+}
+
+#navbar .navbar-light .navbar-nav .nav-link:hover{
+    color: var(--brand2) !important;
+    transition: all linear .4s;
+}
+
+#navbar button{
+    margin-top: 70px;
+    background: linear-gradient(var(--cl1),var(--cl2)) !important;
+    border: none;
+    
+}
+
+#navbar button:hover{
+    background: linear-gradient(var(--brand),var(--brand2)) !important;
+    filter: drop-shadow(0px 4px 3px var(--brand2));
+    transition: all linear .4s;
+}
+
+#navbar button:last-of-type{
+    margin-left: 20px;
+}
+
+/*==============
+navbar css ends
+===============*/
+
+#banner{
+    width: 100%;
+    height: 760px;
+    background: #220055;
+}
+
+#banner img{
+    padding-top: 50px;
+}
+
+#banner h3{
+    padding-top: 50px;
+    padding-left: 15px;
+}
+
+#banner h1{
+    background: linear-gradient(var(--cl4),var(--cl3));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    filter: drop-shadow(15px 15px 15px #661355);
+}
+
+#banner p{
+    padding: 0 30px;
+}
+
+#banner button{
+    background: linear-gradient(var(--cl1),var(--cl2)) !important;
+    border: none;
+    margin-top: 30px;
+}
+
+#banner button:hover{
+    background: linear-gradient(var(--brand),var(--brand2)) !important;
+    filter: drop-shadow(0px 4px 3px var(--brand2));
+    transition: all linear .4s;
+}
+
+/*==============
+banner css ends
+===============*/
+
+#step{
+    background: linear-gradient(#220055,#000);
+    padding-bottom: 75px;
+}
+
+#step .st1 {
+	background: linear-gradient(var(--cl2),var(--cl1));
+	box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.50);
+}
+
+#step h2{
+    background: linear-gradient(var(--cl4),var(--cl3));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    filter: drop-shadow(10px 10px 10px #661355);
+    padding: 30px 0;
+}
+
+#step h3{
+    padding-bottom: 15px;
+}
+
+#step p{
+    padding-bottom: 35px;
+}
+
+/*==============
+step css ends
+===============*/
+
+header h1{
+    background: linear-gradient(var(--cl4),var(--cl3));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+/*==============
+heading css ends
+===============*/
+
+#games{
+    background: #000;
+    padding-bottom: 95px;
+}
+
+#games header{
+    padding-bottom: 55px;
+}
+
+#games .overlay{
+    width: 100%;
+    height: 0%;
+    position: absolute;
+    inset: 0;
+    background: rgba(21, 0, 53, 0.85);
+    opacity: 0;
+}
+
+#games .games-item:hover .overlay{
+    height: 100%;
+    opacity: 1;
+    transition: all linear .4s;
+}
+
+#games .overlay h4{
+    padding-top: 165px;
+    padding-bottom: 70px;
+}
+
+#games .overlay button{
+    background: linear-gradient(var(--cl1),var(--cl2)) !important;
+    border: none;
+}
+
+#games .overlay button:hover{
+    background: linear-gradient(var(--brand),var(--brand2)) !important;
+    filter: drop-shadow(0px 4px 3px var(--brand2));
+    transition: all linear .4s;
+}
+
+/*==============
+games css ends
+===============*/
+
+#spin{
+    background-color: #220055;
+    width: 100%;
+    height: 740px;
+}
+
+#spin .im1{
+    position: absolute;
+    top: 100px;
+    left: 0;
+    z-index: 1;
+}
+
+#spin .im2{
+    position: absolute;
+    top: 450px;
+    left: 0;
+    z-index: 3;
+}
+
+#spin .im3{
+    position: absolute;
+    top: 350px;
+    left: 0;
+    z-index: 2;
+}
+
+#spin header{
+    padding-top: 180px;
+    padding-bottom: 60px;
+}
+
+#spin p:last-of-type{
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+
+#spin button{
+    background: linear-gradient(var(--cl1),var(--cl2)) !important;
+    border: none;
+}
+
+#spin button:hover{
+    background: linear-gradient(var(--brand),var(--brand2)) !important;
+    filter: drop-shadow(0px 4px 3px var(--brand2));
+    transition: all linear .4s;
+}
+
+/*==============
+spin css ends
+===============*/
+#plan{
+    width: 100%;
+    height: 860px;
+    background: #000;
+}
+
+#plan header{
+    padding-top: 100px;
+    padding-bottom: 65px;
+}
+
+#plan .plan-item{
+    transform: scale(0.9);
+}
+
+#plan .plan-item:hover{
+    transform: scale(1);
+    transition: all linear .4s;
+}
+
+#plan h4{
+    width: 100%;
+    padding: 20px 0;
+    background: linear-gradient(var(--brand2),var(--brand)) !important;
+    border-radius: 5px;
+    filter: drop-shadow(0px 4px 3px #661355);
+    opacity: 0;
+}
+
+#plan .plan-item:hover h4{
+    opacity: 1;
+    transition: all linear .4s;
+}
+
+#plan .main{
+    background: linear-gradient(var(--cl1),var(--cl2)) !important;
+    padding-top: 60px;
+}
+
+#plan .main h3{
+    padding-bottom: 30px;
+}
+
+#plan .main p{
+    padding-bottom: 60px;
+}
+
+#plan .main ul{
+    padding-left: 0 !important;
+    padding-bottom: 30px;
+}
+
+#plan .main ul li{
+    padding-bottom: 10px;
+}
+
+#plan .main button {
+	position: absolute;
+	top: 480px;
+	left: 140px;
+    background: linear-gradient(var(--cl2),var(--cl1)) !important;
+    border: none;
+}
+
+#plan .plan-item:hover .main button{
+    background: linear-gradient(var(--brand),var(--brand2)) !important;
+    filter: drop-shadow(0px 4px 3px var(--brand2));
+    transition: all linear .4s;
+}
+
+/*==============
+plan css ends
+===============*/
+
+#faq{
+    width: 100%;
+    height: 755px;
+    background-color: #220055;
+}
+
+#faq header{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#faq .btn-secondary {
+	color: #fff;
+	background-color: transparent; 
+	border: none;
+    box-shadow: none;
+}
+
+#faq .dropdown{
+    margin-bottom: 100px !important;
+}
+
+/* #faq .dropdown-toggle::after {
+	margin-left: 160px;
+} */
+
+#faq ul{
+    background-color: transparent !important;
+    border: 1px solid var(--cl4);
+}
+
+#faq a{
+    color: #fff !important;
+    display: inline-block !important;
+    padding: 0 40px;
+}
+
+#faq .dropdown-item {
+	white-space: normal !important; 
+	
+}
+
+#faq .dropdown-item:focus, .dropdown-item:hover {
+	color: #ffffff;
+	background-color: transparent;
+}
+
+#faq h3{
+    padding-top: 30px;
+}
+
+#faq .wrapper{
+    width: 80px;
+    height: 80px;
+    border: 1px solid var(--cl4);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+}
+
+#faq #countdown{
+    display: flex;
+    justify-content: space-between;
+}
+
+#faq .wrapper .time{
+    font-size: 20px;
+    color: var(--cl3);
+    font-family: var(--sf);
+    font-weight: 600;
+}
+
+#faq .wrapper .label{
+    font-size: 15px;
+    font-family: var(--sf);
+    font-weight: 600;
+    color: var(--cl4);
+    text-transform: uppercase;
+}
+
+#faq .t-slider{
+    margin-top: 55px;
+}
+
+#faq .t-item{
+    margin-bottom: 30px !important;
+}
+
+/*==============
+faq css ends
+===============*/
+
+#subs{
+    width: 100%;
+    height: 160px;
+    background: linear-gradient(var(--cl2),var(--cl1));
+    filter: drop-shadow(0px 5px 0px rgba(0, 0, 0, 0.85));
+}
+
+#subs header{
+    padding-top: 30px;
+    padding-bottom: 10px;
+    filter: drop-shadow(0px 4px 3px rgba(0, 0, 0, 0.85));
+}
+
+#subs .form-control {
+	color: #000000;
+	background-color: transparent;
+	border: 1px solid #000000;
+}
+
+/*==============
+subs css ends
+===============*/
+
+footer{
+    width: 100%;
+    height: 430px;
+    background: #000;
+}
+
+footer header{
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+footer button{
+    background: linear-gradient(var(--cl1),var(--cl2)) !important;
+    border: none !important;
+    margin-top: 30px !important;
+}
+
+footer button:hover{
+    background: linear-gradient(var(--brand),var(--brand2)) !important;
+    filter: drop-shadow(0px 4px 3px var(--brand2));
+    transition: all linear .4s;
+}
+
+footer ul{
+    padding-left: 0 !important;
+}
+footer ul li{
+    padding-bottom: 15px;
+}
+
+footer h3{
+    padding-top: 15px;
+}
